@@ -12,7 +12,7 @@ public class Dashboard extends Application {
         Controller controller = new Controller();
 
         // Prendi il root layout dal controller
-        Scene scene = new Scene(controller.getRoot(), 500, 400);
+        Scene scene = new Scene(controller.getRoot(), 1300, 800);
 
         primaryStage.setTitle("GenderHack Dashboard");
         primaryStage.setScene(scene);
