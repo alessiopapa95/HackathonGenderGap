@@ -425,7 +425,7 @@ public class Controller {
 
         // --- Grafico ---
         final BarChart<String, Number> barChart = new BarChart<>(xAxis, yAxis);
-        barChart.setTitle("Distribuzione di Genere in ICTs per Area");
+        barChart.setTitle("Distribuzione di Genere in ICTs per Area Geografica");
         barChart.setCategoryGap(20);
 
         // --- Serie F / M ---
@@ -521,10 +521,6 @@ public class Controller {
                 // Assicurati che sia visibile
                 s1.setVisible(true);
             }
-            
-            // Rimuovi la logica di colorazione/rimozione manuale del testo/simbolo dalla legenda
-            // La riga successiva NON deve esserci per colorare i simboli, a meno che tu non voglia solo il testo colorato!
-            // Rimuovi: 'if (barChart.lookup(".chart-legend") instanceof Pane legendPane) { ... }'
         });
 
         return barChart;
