@@ -4,7 +4,7 @@ Consultare il file Report.pdf per tutte le informazioni relative a questo proget
 
 <h2>Guida all'utilizzo dell'applicazione</h2>
 
-<h3>IMPORTARE DATABASE HACKATON.SQL</h3>
+<h3>Importare database hackaton.sql</h3>
 
 Prerequisito:
 - Aver installato MySQL sul proprio terminale ed aver avviato il server
