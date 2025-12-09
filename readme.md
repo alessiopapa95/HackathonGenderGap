@@ -10,10 +10,13 @@ Prerequisito:
 - Aver installato MySQL sul proprio terminale ed aver avviato il server
 
 Passaggi da eseguire:
-1.  Utilizzare da terminale il comando:
-    "mysql -u [nome_utente] -p Hackathon < backup_database.sql"
+1.  Accedere al proprio database MySQL e creare il database "Hackathon"
 
-2.  Accedere al contenuto del file Hackathongendergap/src/dashboard/DatabaseConnection.java
+2.  Uscire da MySQL ed utilizzare da terminale il comando per popolare il database:
+    
+    mysql -u [Inserire_il_proprio_nome_utente_MySQL] -p Hackathon < backup_database.sql
+
+3.  Accedere al contenuto del file Hackathongendergap/src/dashboard/DatabaseConnection.java
     e modificare il contenuto di USER e PASSWORD, inserendo quelli del proprio utente MySQL.
 
 <h3>Avviare l'applicazione</h3>
@@ -29,8 +32,10 @@ In alternativa, compilare l'applicativo tramite il terminale
 1.  Aprire da terminale la cartella HackathonGenderGap
 
 2.  Compilare eseguendo il comando: 
+    
     javac --module-path lib/javafx-sdk-17.0.17/lib --add-modules javafx.controls,javafx.fxml -cp "lib/mysql-connector-j-9.5.0.jar" -d out $(find src -name "*.java")
 
 3.  Avviare attraverso il comando:
+    
     java --module-path lib/javafx-sdk-17.0.17/lib --add-modules javafx.controls,javafx.fxml -cp "out:lib/mysql-connector-j-9.5.0.jar" Main
 
